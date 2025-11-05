@@ -44,6 +44,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
     photo.src = parrainages[cle].photo;
     resultatDiv.classList.remove("hidden");
   } else {
-    alert("Aucun parrain trouvé 😢, va voir Levine");
+    alert("Aucun parrain trouvé 😢, réessaie  !");
   }
 });
