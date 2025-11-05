@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soirée Parrainage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="images/logo dl.png" width=150px><br>
+  <h1 style="color: white;">DOUBLE LICENCE DROIT/ÉCONOMIE-GESTION</h1>
+
+  <div class="container">
+    <h1> 🎉 Soirée Parrainage 2025 🎉 </h1>
+    <p>Entre ton prénom et ton nom pour découvrir ton parrain ou ta marraine !</p>
+
+    <form id="form">
+      <input type="text" id="prenom" placeholder="Prénom" required>
+      <input type="text" id="nom" placeholder="Nom" required>
+      <button type="submit">Découvrir mon parrain</button>
+    </form>
+
+    <div id="resultat" class="hidden">
+      <h2>Ton parrain / ta marraine (avec quelques années en moins) :</h2>
+      <img id="photoParrain" src="" alt="Photo du parrain" />
+      <p>Trouve qui c'est !</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
