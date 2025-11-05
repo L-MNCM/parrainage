@@ -27,7 +27,8 @@ const parrainages = {
   "tutin natacha" : { photo : "images/samah-melwenn.jpg"},
   "zambon adriano" : { photo : "images/milayda.jpg"},
   "zurob qoudsi" : { photo : "images/edgar.jpg"},
-  "mila rondeau" : { photo : "images/photo.jpg"} 
+  "mila rondeau" : { photo : "images/photo.jpg"},
+  "romane kalfa" : { photo : "images/thomas.jpg"}
 };
 
 document.getElementById("form").addEventListener("submit", function (e) {
