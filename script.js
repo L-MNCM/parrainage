@@ -45,7 +45,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
     resultatDiv.classList.remove("hidden");
   } else {
     resultatDiv.classList.remove("hidden");
-    photo.src = "";
     alert("Aucun parrain trouvé 😢");
   }
 });
