@@ -9,7 +9,7 @@ const parrainages = {
   "chen louis" : { photo: "images/mila.jpg" },
   "despres emma" : { photo : "images/margot.jpg"}, 
   "diguimbaye kiara" : { photo: "images/agathe.jpg" },
-  "favier ethan" : { photo : "images/olivier.jpg" },
+  "favier ethan" : { photo : "images/olivier.png" },
   "fernandez mathieu" : { photo : "images/victor.jpg" },
   "hertz laurent" : { photo : "images/priyanka-noah.jpg" },
   "israel vitali" : { photo : "images/mathéo.jpg" },
