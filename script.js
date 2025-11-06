@@ -1,34 +1,33 @@
 const parrainages = {
-  "claire abi chedid": { photo: "images/célia-louise.jpg" },
-  "abbygaelle antonjuko": { photo: "images/salomé.jpg" },
-  "baumelou maxence" : { photo: "images/romane.jpg" },
-  "bosse kheyra" : { photo : "images/samah-melwenn.jpg"},
-  //"bouchen marie" : { photo: "images/.jpg" }, // pas encore 
-  "cazenave mathilde" : { photo: "images/raphael.jpg" },
-  "chambon margot" : { photo: "images/clothilde.jpg" },
-  "chen louis" : { photo: "images/mila.jpg" },
-  "despres emma" : { photo : "images/margot.jpg"}, 
-  "diguimbaye kiara" : { photo: "images/agathe.jpg" },
-  "favier ethan" : { photo : "images/olivier.png" },
-  "fernandez mathieu" : { photo : "images/victor.jpg" },
-  "hertz laurent" : { photo : "images/priyanka-noah.jpg" },
-  "israel vitali" : { photo : "images/mathéo.jpg" },
-  "jacquet cyprien" : { photo : "images/fanny.jpg" },
-  "lhermenier louise" : { photo :"images/camille.jpg" },
-  "morin paul" : { photo : "images/justine.jpg" },
-  "portnoi vitalina" : { photo : "images/fannyhuang.jpg" },
-  "praquin pauline" : {photo : "images/fannyhuot.jpg" },
-  "praud alexis" : { photo : "images/priyanka-noah.jpg" },
-  "raphael hana-lisa" : { photo : "images/rashindi-gabrielle.jgp" },
-  "saidi gianni" : { photo : "images/louise-celia.jpg" },
-  "serre claire" : { photo : "images/benoit.jpg" },
-  "szulman elie" : { photo : "images/rashindi-gabrielle.jpg"},
- // "tonnot amaury" : { photo : "images/.jpg"}, //pas encore
-  "tutin natacha" : { photo : "images/samah-melwenn.jpg"},
-  "zambon adriano" : { photo : "images/milayda.jpg"},
-  "zurob qoudsi" : { photo : "images/edgar.jpg"},
-  "mila rondeau" : { photo : "images/photo.jpg"},
-  "romane kalfa" : { photo : "images/thomas.jpg"}
+  "claire abi chedid": { photos: ["images/célia.jpg", "images/louise.jpg"] },
+  "abbygaelle antonjuko": { photos: ["images/salomé.jpg"] },
+  "maxence baumelou": { photos: ["images/romane.jpg"] },
+  "kheyra bosse": { photos: ["images/samah.jpg", "images/melwenn.jpg"] },
+  "mathilde cazenave": { photos: ["images/raphael.jpg"] },
+  "margot chambon": { photos: ["images/clothilde.jpg"] },
+  "louis chen": { photos: ["images/mila.jpg"] },
+  "emma despres": { photos: ["images/margot.jpg"] },
+  "kiara diguimbaye": { photos: ["images/agathe.jpg"] },
+  "kiara madinan": { photos: ["images/agathe.jpg"] },
+  "ethan favier": { photos: ["images/olivier.png"] },
+  "mathieu fernandez": { photos: ["images/victor.jpg"] },
+  "laurent hertz": { photos: ["images/priyanka.jpg", "images/noah.jpg"] },
+  "vitali israel": { photos: ["images/mathéo.jpg"] },
+  "cyprien jacquet": { photos: ["images/fanny.jpg"] },
+  "louise lhermenier": { photos: ["images/camille.jpg"] },
+  "paul morin": { photos: ["images/justine.jpg"] },
+  "vitalina portnoi": { photos: ["images/fannyhuang.jpg"] },
+  "pauline praquin": { photos: ["images/fannyhuot.jpg"] },
+  "alexis praud": { photos: ["images/priyanka.jpg", "images/noah.jpg"] },
+  "hana-lisa raphael": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
+  "hana lisa raphael": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
+  "hana-lisa raphaël": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
+  "hana lisa raphaël": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
+  "claire serre": { photos: ["images/benoît.jpg"] },
+  "elie szulman": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
+  "natacha tutin": { photos: ["images/samah.jpg", "images/melwenn.jpg"] },
+  "adriano zambon": { photos: ["images/milayda.jpg"] },
+  "qoudsi zurob": { photos: ["images/edgar.jpg"] },
 };
 
 document.getElementById("form").addEventListener("submit", function (e) {
@@ -39,12 +38,25 @@ document.getElementById("form").addEventListener("submit", function (e) {
   const cle = `${prenom} ${nom}`;
 
   const resultatDiv = document.getElementById("resultat");
-  const photo = document.getElementById("photoParrain");
+  const photoContainer = document.getElementById("photoParrainContainer");
+
+  // Vider le conteneur avant chaque recherche
+  photoContainer.innerHTML = "";
 
   if (parrainages[cle]) {
-    photo.src = parrainages[cle].photo;
+    const photos = parrainages[cle].photos;
+
+    photos.forEach((src) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = "Photo du parrain ou de la marraine";
+      img.classList.add("photo-parrain");
+      photoContainer.appendChild(img);
+    });
+
     resultatDiv.classList.remove("hidden");
   } else {
-    alert("Aucun parrain trouvé 😢, réessaie  !");
+    resultatDiv.classList.add("hidden");
+    alert("Aucun parrain trouvé 😢, réessaie !");
   }
 });
