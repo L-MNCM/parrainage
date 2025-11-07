@@ -57,6 +57,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
     resultatDiv.classList.remove("hidden");
   } else {
     resultatDiv.classList.add("hidden");
-    alert("Aucun parrain trouvé 😢, réessaie !");
+    alert("Aucun parrain trouvé 😓, réessaie !");
   }
 });
