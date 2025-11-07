@@ -10,7 +10,7 @@ const parrainages = {
   "kiara diguimbaye": { photos: ["images/agathe.jpg"] },
   "kiara madinan": { photos: ["images/agathe.jpg"] },
   "ethan favier": { photos: ["images/olivier.png"] },
-  "mathieu fernandez": { photos: ["images/victor.jpg"] },
+  "matthieu fernandez": { photos: ["images/victor.jpg"] },
   "laurent hertz": { photos: ["images/priyanka.jpg", "images/noah.jpg"] },
   "vitali israel": { photos: ["images/mathéo.jpg"] },
   "cyprien jacquet": { photos: ["images/fanny.jpg"] },
