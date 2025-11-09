@@ -1,9 +1,12 @@
 const parrainages = {
-  "claire abi chedid": { photos: ["images/célia.jpg", "images/louise.jpg"] },
-  "abbygaelle antonjuko": { photos: ["images/salomé.jpg"] },
+  "claire abi chedid": { photos: ["images/célia.jpg", "images/louise.jpg"] }, //Célia
+  "abbygaelle antonjuko": { photos: ["images/salomé.jpg"] }, //Salomé
   "maxence baumelou": { photos: ["images/romane.jpeg"] },
   "kheyra bosse": { photos: ["images/samah.jpg", "images/melwenn.jpeg"] },
-  "mathilde cazenave": { photos: ["images/raphael.jpg"] },
+  "marie nicole bouchen": { photos : ["images/clément.jpeg"] },
+  "marie-nicole bouchen": { photos : ["images/clément.jpeg"] },
+  "marie bouchen": { photos : ["images/clément.jpeg"] },
+  "mathilde cazenave": { photos: ["images/raphael.jpg"] }, //raphael
   "margot chambon": { photos: ["images/clothilde.jpg"] },
   "louis chen": { photos: ["images/mila.jpeg"] },
   "louïs chen": { photos: ["images/mila.jpeg"] },
@@ -15,7 +18,7 @@ const parrainages = {
   "laurent hertz": { photos: ["images/priyanka.png", "images/noah.jpeg"] },
   "vitali israel": { photos: ["images/mathéo.jpeg"] },
   "cyprien jacquet": { photos: ["images/fannyhuot.jpeg"] },
-  "louise lhermenier": { photos: ["images/camille.jpg"] },
+  "louise lhermenier": { photos: ["images/camille.jpg"] }, // camille
   "paul morin": { photos: ["images/justine.jpeg"] },
   "vitalina portnoi": { photos: ["images/fannyhuang.jpeg"] },
   "pauline praquin": { photos: ["images/fannyhuot.jpeg"] },
@@ -26,6 +29,7 @@ const parrainages = {
   "hana lisa raphaël": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
   "claire serre": { photos: ["images/benoît.jpg"] },
   "elie szulman": { photos: ["images/rashindi.jpg", "images/gabrielle.jpg"] },
+  "amaury tonnot": { photos: ["images/clément.jpeg"] },
   "natacha tutin": { photos: ["images/samah.jpg", "images/melwenn.jpeg"] },
   "adriano zambon": { photos: ["images/milayda.jpg"] },
   "qoudsi zurob": { photos: ["images/edgar.jpeg"] },
